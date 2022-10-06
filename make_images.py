@@ -17,7 +17,7 @@ def plot_images(images):
 with open('prompts.txt') as f:
 	for prompt in f.read().split('\n'):
 		print(prompt)
-		images = model.text_to_image(prompt, batch_size=3)
+		images = model.text_to_image(prompt, batch_size=4)
 
 		for i, img in enumerate(images):
 		  im = Image.fromarray(img)
